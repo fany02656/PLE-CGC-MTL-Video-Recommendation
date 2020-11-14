@@ -1,0 +1,188 @@
+<!------------------------------------------------------------------------
+<!  Census-Income Database
+<!----------------------------------------------------------------------->
+<HTML>
+<HEAD>
+<TITLE> Census-Income Database</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<!------------------------------------------------------------------------
+<!  Title 
+<!----------------------------------------------------------------------->
+<H1> Census-Income Database</H1>
+
+<!------------------------------------------------------------------------
+<!  Data Type
+<!----------------------------------------------------------------------->
+<H2>Data Type</H2>
+multivariate
+
+
+<!------------------------------------------------------------------------
+<!  Abstract
+<!----------------------------------------------------------------------->
+<H2>Abstract</H2>
+<p>
+This data set contains weighted census data extracted from the 1994 and 1995 current population surveys conducted by the U.S. Census Bureau. The data contains demographic and employment related variables.
+</p>
+
+<!------------------------------------------------------------------------
+<!  Sources
+<!----------------------------------------------------------------------->
+<H2> Sources</H2>
+<H4> Original Owner</H4>
+<PRE>
+<a href="http://www.census.gov/">U.S. Census Bureau</a>
+United States Department of Commerce
+</PRE>
+
+<H4> Donor</H4>
+<PRE>
+Terran Lane and Ronny Kohavi
+Data Mining and Visualization
+Silicon Graphics.
+<a href="mailto:terran@ecn.purdue.edu">terran@ecn.purdue.edu</a>, <a href="mailto:ronnyk@sgi.com">ronnyk@sgi.com</a>
+</PRE>
+
+<B>Date Donated: </B> March 7, 2000 
+
+
+
+<!------------------------------------------------------------------------
+<!  Data Characteristics 
+<!----------------------------------------------------------------------->
+<H2> Data Characteristics</H2>
+
+<p>
+This data set contains weighted census data extracted from the 1994 and 1995 <a href="http://www.census.gov/cps/methodology/techdocs.html"> Current Population Surveys</a> conducted by the U.S. Census Bureau. The data contains 41 demographic and employment related variables.
+
+<p>
+The instance weight indicates the number of people in the population
+that each record represents due to stratified sampling.
+To do real analysis and derive conclusions, this field must be used.
+This attribute should *not* be used in the classifiers.
+
+<p>
+More information detailing the meaning of the attributes can be found in the Census Bureau's 
+<a href="http://www.census.gov/cps/methodology/techdocs.html"> documentation</a>
+To make use of the data descriptions at this site, the following mappings
+to the Census Bureau's internal database column names will be needed:
+
+<PRE>
+age						AAGE
+class of worker					ACLSWKR
+industry code					ADTIND
+occupation code					ADTOCC
+adjusted gross income				AGI
+education					AHGA
+wage per hour					AHRSPAY
+enrolled in edu inst last wk			AHSCOL
+marital status					AMARITL
+major industry code				AMJIND
+major occupation code				AMJOCC
+mace						ARACE
+hispanic Origin					AREORGN
+sex						ASEX
+member of a labor union				AUNMEM
+reason for unemployment				AUNTYPE
+full or part time employment stat		AWKSTAT
+capital gains					CAPGAIN
+capital losses					CAPLOSS
+divdends from stocks				DIVVAL
+federal income tax liability			FEDTAX
+tax filer status				FILESTAT
+region of previous residence			GRINREG
+state of previous residence			GRINST
+detailed household and family stat		HHDFMX
+detailed household summary in household		HHDREL
+instance weight					MARSUPWT
+migration code-change in msa			MIGMTR1
+migration code-change in reg			MIGMTR3
+migration code-move within reg			MIGMTR4
+live in this house 1 year ago			MIGSAME
+migration prev res in sunbelt			MIGSUN
+num persons worked for employer			NOEMP
+family members under 18				PARENT
+total person earnings				PEARNVAL
+country of birth father				PEFNTVTY
+country of birth mother				PEMNTVTY
+country of birth self				PENATVTY
+citizenship					PRCITSHP
+total person income				PTOTVAL
+own business or self employed			SEOTR
+taxable income amount				TAXINC
+fill inc questionnaire for veteran's admin	VETQVA
+veterans benefits				VETYN
+weeks worked in year				WKSWORK
+</PRE>
+
+<p>
+Note that Incomes have been binned at the $50K level to present a binary classification problem, 
+much like the original UCI/ADULT database.  The goal field of this data, however,
+was drawn from the "total person income" field rather than the
+"adjusted gross income" and may, therefore, behave differently than the
+orginal ADULT goal field.
+
+<H4> Basic statistics for this data set</H4>
+
+<PRE>
+Number of instances in data = 199523
+   Duplicate or conflicting instances : 46716
+Number of instances in test = 99762
+   Duplicate or conflicting instances : 20936
+Number of attributes = 40 (continuous : 7 nominal : 33)
+</PRE>
+
+
+<!------------------------------------------------------------------------
+<!  Other Relevant Information 
+<!----------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------
+<!  Data Format 
+<!----------------------------------------------------------------------->
+<H2>Data Format</H2>
+
+<p> One instance per line with comma delimited fields. There are 199523 instances in the data file and 99762 in the test file.
+
+<p>
+The data was split into train/test in approximately 2/3, 1/3
+proportions using MineSet's MIndUtil mineset-to-mlc.
+
+<!------------------------------------------------------------------------
+<!  Past Usage 
+<!----------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------
+<!  Acknowledgements 
+<!----------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------------
+<!  References 
+<!----------------------------------------------------------------------->
+<H2>References and Further Information</H2>
+
+<p>
+<a href="http://www.census.gov/ftp/pub/DES/www/welcome.html"> Data Extraction System</a> for the  Census Bureau
+
+<p>
+<A HREF="http://www.census.gov/">The United States Census Bureau Web Site</A>.
+
+
+<!------------------------------------------------------------------------
+<!  Signature 
+<!----------------------------------------------------------------------->
+<p> <hr>
+<ADDRESS>
+<A href="http://kdd.ics.uci.edu/">The UCI KDD Archive</A> <br>
+<a href="http://www.ics.uci.edu/">Information and Computer Science</a> <br>
+<a href="http://www.uci.edu/">University of California, Irvine</a> <br>
+Irvine, CA 92697-3425 <br>
+</ADDRESS> 
+Last modified: March 7, 2000. 
+</BODY>
+</HTML>
+
